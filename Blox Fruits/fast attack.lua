@@ -13,7 +13,7 @@ local function updateController()
     combatFrameworkActiveController.blocking = false
 end
 
-local function fastAttack(enable)
+local function fastAttack(enable: boolean)
     if enable then
         cameraShaker:Stop()
         attackConnection = heartbeat:Connect(updateController)
