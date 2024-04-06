@@ -1,18 +1,21 @@
 -- GLOBAL SCRIPT SETTINGS --
 _G.autoFarm = true
+_G.rejoinTime = 15 -- minutes
+_G.enableTimeLabel = true
 _G.selectedWeaponName = "Electric Claw"
 
 -- GLOBAL FAST ATTACK SETTINGS --
 local manualAttack = false -- perfoms clicks by pressing left mouse
 _G.fastAttackOptions = { -- perfoms attack by executing a decompiled script
     ["Slow"] = false,
-    ["Normal"] = false,
-    ["Fast"] = true,
+    ["Normal"] = true,
+    ["Fast"] = false,
 }
 
 -- SCRIPT SETTINGS --
 local noClip = false
 local fastAttack = false
+local rejoinClock = os.clock()
 
 -- VARIABLES --
 local client = game:GetService("Players").LocalPlayer
@@ -22,6 +25,7 @@ local currentTween, tweenDiedConn
 
 -- SERVICES --
 local httpService = game:GetService("HttpService")
+local teleportService = game:GetService("TeleportService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local tweenService = game:GetService("TweenService")
 local runService = game:GetService("RunService")
@@ -214,6 +218,27 @@ local function AttackFunction()
 	end
 end
 
+-- server
+local function hopLowest()
+    local servers = "https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"
+
+    local function ListServers(cursor)
+       local Raw = game:HttpGet(servers .. ((cursor and "&cursor="..cursor) or ""))
+       return httpService:JSONDecode(Raw)
+    end
+
+    local Server, Next
+    while not Server do
+        local Servers = ListServers(Next)
+        Server = Servers.data[1]
+        Next = Servers.nextPageCursor
+
+        task.wait()
+    end
+    
+    teleportService:TeleportToPlaceInstance(game.PlaceId, Server.id, client)
+end
+
 -- CONNECTIONS --
 runService.Stepped:Connect(function()
     local state = not (noClip or isTweening())
@@ -277,7 +302,39 @@ runService.Heartbeat:Connect(function()
     end
 end)
 
+-- GUI
+
+
 -- LOOPS --
+task.spawn(function()
+    while true do
+        local elapsedTime = os.clock() - rejoinClock
+        local remainingTime = _G.rejoinTime * 60 - elapsedTime
+        if remainingTime <= 0 then
+            hopLowest()
+        end
+
+        if _G.enableTimeLabel then
+            local gui = Instance.new("ScreenGui")
+            gui.Parent = client:WaitForChild("PlayerGui")
+        
+            local textLabel = Instance.new("TextLabel")
+            textLabel.Size = UDim2.new(0, 340, 0, 70)
+            textLabel.Position = UDim2.new(0.5, -100, 0.5, -25)
+            textLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+            textLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+            textLabel.TextScaled = true 
+            textLabel.Parent = gui
+
+            local minutes = math.floor(remainingTime / 60)
+            local seconds = math.floor(remainingTime % 60)
+            textLabel.Text = "Remaining time until rejoin: ".. minutes.." minutes, ".. seconds.. " seconds"
+        end
+        
+        task.wait(1)
+    end
+end)
+
 while true do
     local ac = combatFramework.activeController
     if ac and ac.equipped then
