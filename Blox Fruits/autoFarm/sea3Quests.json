@@ -1,0 +1,273 @@
+[
+    {
+      "minLevel": 1500,
+      "maxLevel": 1524,
+      "monsterName": "Pirate Millionaire",
+      "monsterSpawnName": "Pirate Millionaire [Lv. 1500]",
+      "questLevel": 1,
+      "questName": "PiratePortQuest",
+      "questCFrame": [ -290, 42, 5581 ]
+    },
+    {
+      "minLevel": 1525,
+      "maxLevel": 1574,
+      "monsterName": "Pistol Billionaire",
+      "monsterSpawnName": "Pistol Billionaire [Lv. 1525]",
+      "questLevel": 2,
+      "questName": "PiratePortQuest",
+      "questCFrame": [ -290, 42, 5581 ]
+    },
+    {
+      "minLevel": 1575,
+      "maxLevel": 1599,
+      "monsterName": "Dragon Crew Warrior",
+      "monsterSpawnName": "Dragon Crew Warrior [Lv. 1575]",
+      "questLevel": 1,
+      "questName": "AmazonQuest",
+      "questCFrame": [ 5832, 51, -1101 ]
+    },
+    {
+      "minLevel": 1600,
+      "maxLevel": 1624,
+      "monsterName": "Dragon Crew Archer",
+      "monsterSpawnName": "Dragon Crew Archer [Lv. 1600]",
+      "questLevel": 2,
+      "questName": "AmazonQuest",
+      "questCFrame": [ 5833, 51, -1103 ]
+    },
+    {
+      "minLevel": 1625,
+      "maxLevel": 1649,
+      "monsterName": "Female Islander",
+      "monsterSpawnName": "Female Islander [Lv. 1625]",
+      "questLevel": 1,
+      "questName": "AmazonQuest2",
+      "questCFrame": [ 5446, 601, 749 ]
+    },
+    {
+      "minLevel": 1650,
+      "maxLevel": 1699,
+      "monsterName": "Giant Islander",
+      "monsterSpawnName": "Giant Islander [Lv. 1650]",
+      "questLevel": 2,
+      "questName": "AmazonQuest2",
+      "questCFrame": [ 5446, 601, 749 ]
+    },
+    {
+      "minLevel": 1700,
+      "maxLevel": 1724,
+      "monsterName": "Marine Commodore",
+      "monsterSpawnName": "Marine Commodore [Lv. 1700]",
+      "questLevel": 1,
+      "questName": "MarineTreeIsland",
+      "questCFrame": [ 2180, 27, -6741 ]
+    },
+    {
+      "minLevel": 1725,
+      "maxLevel": 1774,
+      "monsterName": "Marine Rear Admiral",
+      "monsterSpawnName": "Marine Rear Admiral [Lv. 1725]",
+      "questLevel": 2,
+      "questName": "MarineTreeIsland",
+      "questCFrame": [ 2179, 28, -6740 ]
+    },
+    {
+      "minLevel": 1775,
+      "maxLevel": 1799,
+      "monsterName": "Fishman Raider",
+      "monsterSpawnName": "Fishman Raider [Lv. 1775]",
+      "questLevel": 1,
+      "questName": "DeepForestIsland3",
+      "questCFrame": [ -10581, 330, -8761 ]
+    },
+    {
+      "minLevel": 1800,
+      "maxLevel": 1824,
+      "monsterName": "Fishman Captain",
+      "monsterSpawnName": "Fishman Captain [Lv. 1800]",
+      "questLevel": 2,
+      "questName": "DeepForestIsland3",
+      "questCFrame": [ -10581, 330, -8761 ]
+    },
+    {
+      "minLevel": 1825,
+      "maxLevel": 1849,
+      "monsterName": "Forest Pirate",
+      "monsterSpawnName": "Forest Pirate [Lv. 1825]",
+      "questLevel": 1,
+      "questName": "DeepForestIsland",
+      "questCFrame": [ -13234, 331, -7625 ]
+    },
+    {
+      "minLevel": 1850,
+      "maxLevel": 1899,
+      "monsterName": "Mythological Pirate",
+      "monsterSpawnName": "Mythological Pirate [Lv. 1850]",
+      "questLevel": 2,
+      "questName": "DeepForestIsland",
+      "questCFrame": [ -13234, 331, -7625 ]
+    },
+    {
+      "minLevel": 1900,
+      "maxLevel": 1924,
+      "monsterName": "Jungle Pirate",
+      "monsterSpawnName": "Jungle Pirate [Lv. 1900]",
+      "questLevel": 1,
+      "questName": "DeepForestIsland2",
+      "questCFrame": [ -12680, 389, -9902 ]
+    },
+    {
+      "minLevel": 1925,
+      "maxLevel": 1974,
+      "monsterName": "Musketeer Pirate",
+      "monsterSpawnName": "Musketeer Pirate [Lv. 1925]",
+      "questLevel": 2,
+      "questName": "DeepForestIsland2",
+      "questCFrame": [ -12680, 389, -9902 ]
+    },
+    {
+      "minLevel": 1975,
+      "maxLevel": 1999,
+      "monsterName": "Reborn Skeleton",
+      "monsterSpawnName": "Reborn Skeleton [Lv. 1975]",
+      "questLevel": 1,
+      "questName": "HauntedQuest1",
+      "questCFrame": [ -9479, 141, 5566 ]
+    },
+    {
+      "minLevel": 2000,
+      "maxLevel": 2024,
+      "monsterName": "Living Zombie",
+      "monsterSpawnName": "Living Zombie [Lv. 2000]",
+      "questLevel": 2,
+      "questName": "HauntedQuest1",
+      "questCFrame": [ -9479, 141, 5566 ]
+    },
+    {
+      "minLevel": 2025,
+      "maxLevel": 2049,
+      "monsterName": "Demonic Soul",
+      "monsterSpawnName": "Demonic Soul [Lv. 2025]",
+      "questLevel": 1,
+      "questName": "HauntedQuest2",
+      "questCFrame": [ -9516, 172, 6078 ]
+    },
+    {
+      "minLevel": 2050,
+      "maxLevel": 2074,
+      "monsterName": "Posessed Mummy",
+      "monsterSpawnName": "Posessed Mummy [Lv. 2050]",
+      "questLevel": 2,
+      "questName": "HauntedQuest2",
+      "questCFrame": [ -9516, 172, 6078 ]
+    },
+    {
+      "minLevel": 2075,
+      "maxLevel": 2099,
+      "monsterName": "Peanut Scout",
+      "monsterSpawnName": "Peanut Scout [Lv. 2075]",
+      "questLevel": 1,
+      "questName": "NutsIslandQuest",
+      "questCFrame": [ -2104, 38, -10194 ]
+    },
+    {
+      "minLevel": 2100,
+      "maxLevel": 2124,
+      "monsterName": "Peanut President",
+      "monsterSpawnName": "Peanut President [Lv. 2100]",
+      "questLevel": 2,
+      "questName": "NutsIslandQuest",
+      "questCFrame": [ -2104, 38, -10194 ]
+    },
+    {
+      "minLevel": 2125,
+      "maxLevel": 2149,
+      "monsterName": "Ice Cream Chef",
+      "monsterSpawnName": "Ice Cream Chef [Lv. 2125]",
+      "questLevel": 1,
+      "questName": "IceCreamIslandQuest",
+      "questCFrame": [ -820, 65, -10965 ]
+    },
+    {
+      "minLevel": 2150,
+      "maxLevel": 2199,
+      "monsterName": "Ice Cream Commander",
+      "monsterSpawnName": "Ice Cream Commander [Lv. 2150]",
+      "questLevel": 2,
+      "questName": "IceCreamIslandQuest",
+      "questCFrame": [ -820, 65, -10965 ]
+    },
+    {
+      "minLevel": 2200,
+      "maxLevel": 2224,
+      "monsterName": "Cookie Crafter",
+      "monsterSpawnName": "Cookie Crafter [Lv. 2200]",
+      "questLevel": 1,
+      "questName": "CakeQuest1",
+      "questCFrame": [ -2021, 37, -12028 ]
+    },
+    {
+      "minLevel": 2225,
+      "maxLevel": 2249,
+      "monsterName": "Cake Guard",
+      "monsterSpawnName": "Cake Guard [Lv. 2225]",
+      "questLevel": 2,
+      "questName": "CakeQuest1",
+      "questCFrame": [ -2021, 37, -12028 ]
+    },
+    {
+      "minLevel": 2250,
+      "maxLevel": 2274,
+      "monsterName": "Baking Staff",
+      "monsterSpawnName": "Baking Staff [Lv. 2250]",
+      "questLevel": 1,
+      "questName": "CakeQuest2",
+      "questCFrame": [ -1927, 37, -12842 ]
+    },
+    {
+      "minLevel": 2275,
+      "maxLevel": 2449,
+      "monsterName": "Head Baker",
+      "monsterSpawnName": "Head Baker [Lv. 2275]",
+      "questLevel": 2,
+      "questName": "CakeQuest2",
+      "questCFrame": [ -1927, 37, -12842 ]
+    },
+    {
+        "minLevel": 2450,
+        "maxLevel": 2474,
+        "monsterName": "Isle Outlaw",
+        "monsterSpawnName": "Isle Outlaw [Lv. 2450]",
+        "questLevel": 1,
+        "questName": "TikiQuest1",
+        "questCFrame": [-16548, 55, -172]
+    },
+    {
+        "minLevel": 2475,
+        "maxLevel": 2499,
+        "monsterName": "Island Boy",
+        "monsterSpawnName": "Island Boy [Lv. 2475]",
+        "questLevel": 2,
+        "questName": "TikiQuest1",
+        "questCFrame": [-16548, 55, -172]
+    },
+    {
+        "minLevel": 2500,
+        "maxLevel": 2524,
+        "monsterName": "Sun-kissed Warrior",
+        "monsterSpawnName": "Sun-kissed Warrior [Lv. 2500]",
+        "questLevel": 1,
+        "questName": "TikiQuest2",
+        "questCFrame": [-16541, 54, 1051]
+    },
+    {
+        "minLevel": 2525,
+        "maxLevel": 2550,
+        "monsterName": "Isle Champion",
+        "monsterSpawnName": "Isle Champion [Lv. 2525]",
+        "questLevel": 2,
+        "questName": "TikiQuest2",
+        "questCFrame": [-16541, 54, 1051]
+    }
+  ]
+  
