@@ -1,0 +1,200 @@
+[
+    {
+        "minLevel": 700,
+        "maxLevel": 724,
+        "monsterName": "Raider",
+        "monsterSpawnName": "Raider [Lv. 700]",
+        "questLevel": 1,
+        "questName": "Area1Quest",
+        "questCFrame": [ -429, 71, 1836 ]
+    },
+    {
+        "minLevel": 725,
+        "maxLevel": 774,
+        "monsterName": "Mercenary",
+        "monsterSpawnName": "Mercenary [Lv. 725]",
+        "questLevel": 2,
+        "questName": "Area1Quest",
+        "questCFrame": [ -429, 71, 1836 ]
+    },
+    {
+        "minLevel": 775,
+        "maxLevel": 799,
+        "monsterName": "Swan Pirate",
+        "monsterSpawnName": "Swan Pirate [Lv. 775]",
+        "questLevel": 1,
+        "questName": "Area2Quest",
+        "questCFrame": [ 638, 71, 918 ]
+    },
+    {
+        "minLevel": 800,
+        "maxLevel": 874,
+        "monsterName": "Factory Staff",
+        "monsterSpawnName": "Factory Staff [Lv. 800]",
+        "questLevel": 2,
+        "questName": "Area2Quest",
+        "questCFrame": [ 632, 73, 918 ]
+    },
+    {
+        "minLevel": 875,
+        "maxLevel": 899,
+        "monsterName": "Marine Lieutenant",
+        "monsterSpawnName": "Marine Lieutenant [Lv. 875]",
+        "questLevel": 1,
+        "questName": "MarineQuest3",
+        "questCFrame": [ -2440, 71, -3216 ]
+    },
+    {
+        "minLevel": 900,
+        "maxLevel": 949,
+        "monsterName": "Marine Captain",
+        "monsterSpawnName": "Marine Captain [Lv. 900]",
+        "questLevel": 2,
+        "questName": "MarineQuest3",
+        "questCFrame": [ -2440, 71, -3216 ]
+    },
+    {
+        "minLevel": 950,
+        "maxLevel": 974,
+        "monsterName": "Zombie",
+        "monsterSpawnName": "Zombie [Lv. 950]",
+        "questLevel": 1,
+        "questName": "ZombieQuest",
+        "questCFrame": [ -5497, 47, -795 ]
+    },
+    {
+        "minLevel": 975,
+        "maxLevel": 999,
+        "monsterName": "Vampire",
+        "monsterSpawnName": "Vampire [Lv. 975]",
+        "questLevel": 2,
+        "questName": "ZombieQuest",
+        "questCFrame": [ -5497, 47, -795 ]
+    },
+    {
+        "minLevel": 1000,
+        "maxLevel": 1049,
+        "monsterName": "Snow Trooper",
+        "monsterSpawnName": "Snow Trooper [Lv. 1000]",
+        "questLevel": 1,
+        "questName": "SnowMountainQuest",
+        "questCFrame": [ 609, 400, -5372 ]
+    },
+    {
+        "minLevel": 1050,
+        "maxLevel": 1099,
+        "monsterName": "Winter Warrior",
+        "monsterSpawnName": "Winter Warrior [Lv. 1050]",
+        "questLevel": 2,
+        "questName": "SnowMountainQuest",
+        "questCFrame": [ 609, 400, -5372 ]
+    },
+    {
+        "minLevel": 1100,
+        "maxLevel": 1124,
+        "monsterName": "Lab Subordinate",
+        "monsterSpawnName": "Lab Subordinate [Lv. 1100]",
+        "questLevel": 1,
+        "questName": "IceSideQuest",
+        "questCFrame": [ -6064, 15, -4902 ]
+    },
+    {
+        "minLevel": 1125,
+        "maxLevel": 1174,
+        "monsterName": "Horned Warrior",
+        "monsterSpawnName": "Horned Warrior [Lv. 1125]",
+        "questLevel": 2,
+        "questName": "IceSideQuest",
+        "questCFrame": [ -6064, 15, -4902 ]
+    },
+    {
+        "minLevel": 1175,
+        "maxLevel": 1199,
+        "monsterName": "Magma Ninja",
+        "monsterSpawnName": "Magma Ninja [Lv. 1175]",
+        "questLevel": 1,
+        "questName": "FireSideQuest",
+        "questCFrame": [ -5428, 15, -5299 ]
+    },
+    {
+        "minLevel": 1200,
+        "maxLevel": 1249,
+        "monsterName": "Lava Pirate",
+        "monsterSpawnName": "Lava Pirate [Lv. 1200]",
+        "questLevel": 2,
+        "questName": "FireSideQuest",
+        "questCFrame": [ -5428, 15, -5299 ]
+    },
+    {
+        "minLevel": 1250,
+        "maxLevel": 1274,
+        "monsterName": "Ship Deckhand",
+        "monsterSpawnName": "Ship Deckhand [Lv. 1250]",
+        "questLevel": 1,
+        "questName": "ShipQuest1",
+        "questCFrame": [ 1037, 125, 32911 ]
+    },
+    {
+        "minLevel": 1275,
+        "maxLevel": 1299,
+        "monsterName": "Ship Engineer",
+        "monsterSpawnName": "Ship Engineer [Lv. 1275]",
+        "questLevel": 2,
+        "questName": "ShipQuest1",
+        "questCFrame": [ 1037, 125, 32911 ]
+    },
+    {
+        "minLevel": 1300,
+        "maxLevel": 1324,
+        "monsterName": "Ship Steward",
+        "monsterSpawnName": "Ship Steward [Lv. 1300]",
+        "questLevel": 1,
+        "questName": "ShipQuest2",
+        "questCFrame": [ 968, 125, 33244 ]
+    },
+    {
+        "minLevel": 1325,
+        "maxLevel": 1349,
+        "monsterName": "Ship Officer",
+        "monsterSpawnName": "Ship Officer [Lv. 1325]",
+        "questLevel": 2,
+        "questName": "ShipQuest2",
+        "questCFrame": [ 968, 125, 33244 ]
+    },
+    {
+        "minLevel": 1350,
+        "maxLevel": 1374,
+        "monsterName": "Arctic Warrior",
+        "monsterSpawnName": "Arctic Warrior [Lv. 1350]",
+        "questLevel": 1,
+        "questName": "FrostQuest",
+        "questCFrame": [ 5667, 26, -6486 ]
+    },
+    {
+        "minLevel": 1375,
+        "maxLevel": 1424,
+        "monsterName": "Snow Lurker",
+        "monsterSpawnName": "Snow Lurker [Lv. 1375]",
+        "questLevel": 2,
+        "questName": "FrostQuest",
+        "questCFrame": [ 5667, 26, -6486 ]
+    },
+    {
+        "minLevel": 1425,
+        "maxLevel": 1449,
+        "monsterName": "Sea Soldier",
+        "monsterSpawnName": "Sea Soldier [Lv. 1425]",
+        "questLevel": 1,
+        "questName": "ForgottenQuest",
+        "questCFrame": [ -3054, 235, -10142 ]
+    },
+    {
+        "minLevel": 1450,
+        "maxLevel": 1499,
+        "monsterName": "Water Fighter",
+        "monsterSpawnName": "Water Fighter [Lv. 1450]",
+        "questLevel": 2,
+        "questName": "ForgottenQuest",
+        "questCFrame": [ -3054, 235, -10142 ]
+    }
+]
