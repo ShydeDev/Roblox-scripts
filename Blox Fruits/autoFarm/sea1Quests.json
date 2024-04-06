@@ -1,0 +1,236 @@
+[
+    {
+        "minLevel": 1,
+        "maxLevel": 9,
+        "monsterName": "Bandit",
+        "monsterSpawnName": "Bandit [Lv. 5]",
+        "questLevel": 1,
+        "questName": "BanditQuest1",
+        "questCFrame": [1059, 15, 1550]
+    },
+    {
+        "minLevel": 10,
+        "maxLevel": 14,
+        "monsterName": "Monkey",
+        "monsterSpawnName": "Monkey [Lv. 14]",
+        "questLevel": 1,
+        "questName": "JungleQuest",
+        "questCFrame": [-1598, 35, 153]
+    },
+    {
+        "minLevel": 15,
+        "maxLevel": 29,
+        "monsterName": "Gorilla",
+        "monsterSpawnName": "Gorilla [Lv. 20]",
+        "questLevel": 2,
+        "questName": "JungleQuest",
+        "questCFrame": [-1598, 35, 153]
+    },
+    {
+        "minLevel": 30,
+        "maxLevel": 39,
+        "monsterName": "Pirate",
+        "monsterSpawnName": "Pirate [Lv. 35]",
+        "questLevel": 1,
+        "questName": "BuggyQuest1",
+        "questCFrame": [-1141, 4, 3831]
+    },
+    {
+        "minLevel": 40,
+        "maxLevel": 59,
+        "monsterName": "Brute",
+        "monsterSpawnName": "Brute [Lv. 45]",
+        "questLevel": 2,
+        "questName": "BuggyQuest1",
+        "questCFrame": [-1141, 4, 3831]
+    },
+    {
+        "minLevel": 60,
+        "maxLevel": 74,
+        "monsterName": "Desert Bandit",
+        "monsterSpawnName": "Desert Bandit [Lv. 60]",
+        "questLevel": 1,
+        "questName": "DesertQuest",
+        "questCFrame": [894, 5, 4392]
+    },
+    {
+        "minLevel": 75,
+        "maxLevel": 89,
+        "monsterName": "Desert Officer",
+        "monsterSpawnName": "Desert Officer [Lv. 70]",
+        "questLevel": 2,
+        "questName": "DesertQuest",
+        "questCFrame": [894, 5, 4392]
+    },
+    {
+        "minLevel": 90,
+        "maxLevel": 99,
+        "monsterName": "Snow Bandit",
+        "monsterSpawnName": "Snow Bandit [Lv. 90]",
+        "questLevel": 1,
+        "questName": "SnowQuest",
+        "questCFrame": [1389, 88, -1298]
+    },
+    {
+        "minLevel": 100,
+        "maxLevel": 119,
+        "monsterName": "Snowman",
+        "monsterSpawnName": "Snowman [Lv. 100]",
+        "questLevel": 2,
+        "questName": "SnowQuest",
+        "questCFrame": [1389, 88, -1298]
+    },
+    {
+        "minLevel": 120,
+        "maxLevel": 149,
+        "monsterName": "Chief Petty Officer",
+        "monsterSpawnName": "Chief Petty Officer [Lv. 120]",
+        "questLevel": 1,
+        "questName": "MarineQuest2",
+        "questCFrame": [-5039, 27, 4324]
+    },
+    {
+        "minLevel": 150,
+        "maxLevel": 174,
+        "monsterName": "Sky Bandit",
+        "monsterSpawnName": "Sky Bandit [Lv. 150]",
+        "questLevel": 1,
+        "questName": "SkyQuest",
+        "questCFrame": [-4839, 716, -2619]
+    },
+    {
+        "minLevel": 175,
+        "maxLevel": 189,
+        "monsterName": "Dark Master",
+        "monsterSpawnName": "Dark Master [Lv. 175]",
+        "questLevel": 2,
+        "questName": "SkyQuest",
+        "questCFrame": [-4839, 716, -2619]
+    },
+    {
+        "minLevel": 190,
+        "maxLevel": 209,
+        "monsterName": "Prisoner",
+        "monsterSpawnName": "Prisoner [Lv. 190]",
+        "questLevel": 1,
+        "questName": "PrisonerQuest",
+        "questCFrame": [5308, 1, 475]
+    },
+    {
+        "minLevel": 210,
+        "maxLevel": 249,
+        "monsterName": "Dangerous Prisoner",
+        "monsterSpawnName": "Dangerous Prisoner [Lv. 210]",
+        "questLevel": 2,
+        "questName": "PrisonerQuest",
+        "questCFrame": [5308, 1, 475]
+    },
+    {
+        "minLevel": 250,
+        "maxLevel": 274,
+        "monsterName": "Toga Warrior",
+        "monsterSpawnName": "Toga Warrior [Lv. 250]",
+        "questLevel": 1,
+        "questName": "ColosseumQuest",
+        "questCFrame": [-1580, 6, -2986]
+    },
+    {
+        "minLevel": 275,
+        "maxLevel": 299,
+        "monsterName": "Gladiator",
+        "monsterSpawnName": "Gladiator [Lv. 275]",
+        "questLevel": 2,
+        "questName": "ColosseumQuest",
+        "questCFrame": [-1580, 6, -2986]
+    },
+    {
+        "minLevel": 300,
+        "maxLevel": 324,
+        "monsterName": "Military Soldier",
+        "monsterSpawnName": "Military Soldier [Lv. 300]",
+        "questLevel": 1,
+        "questName": "MagmaQuest",
+        "questCFrame": [-5313, 10, 8515]
+    },
+    {
+        "minLevel": 325,
+        "maxLevel": 374,
+        "monsterName": "Military Spy",
+        "monsterSpawnName": "Military Spy [Lv. 325]",
+        "questLevel": 2,
+        "questName": "MagmaQuest",
+        "questCFrame": [-5313, 10, 8515]
+    },
+    {
+        "minLevel": 375,
+        "maxLevel": 399,
+        "monsterName": "Fishman Warrior",
+        "monsterSpawnName": "Fishman Warrior [Lv. 375]",
+        "questLevel": 1,
+        "questName": "FishmanQuest",
+        "questCFrame": [61122, 18, 1569]
+    },
+    {
+        "minLevel": 400,
+        "maxLevel": 449,
+        "monsterName": "Fishman Commando",
+        "monsterSpawnName": "Fishman Commando [Lv. 400]",
+        "questLevel": 2,
+        "questName": "FishmanQuest",
+        "questCFrame": [61122, 18, 1569]
+    },
+    {
+        "minLevel": 450,
+        "maxLevel": 474,
+        "monsterName": "God's Guard",
+        "monsterSpawnName": "God's Guard [Lv. 450]",
+        "questLevel": 1,
+        "questName": "SkyExp1Quest",
+        "questCFrame": [-4721, 843, -1949]
+    },
+    {
+        "minLevel": 475,
+        "maxLevel": 524,
+        "monsterName": "Shanda",
+        "monsterSpawnName": "Shanda [Lv. 475]",
+        "questLevel": 2,
+        "questName": "SkyExp1Quest",
+        "questCFrame": [-7859, 5544, -381]
+    },
+    {
+        "minLevel": 525,
+        "maxLevel": 549,
+        "monsterName": "Royal Squad",
+        "monsterSpawnName": "Royal Squad [Lv. 525]",
+        "questLevel": 1,
+        "questName": "SkyExp2Quest",
+        "questCFrame": [-7906, 5634, -1411]
+    },
+    {
+        "minLevel": 550,
+        "maxLevel": 624,
+        "monsterName": "Royal Soldier",
+        "monsterSpawnName": "Royal Soldier [Lv. 550]",
+        "questLevel": 2,
+        "questName": "SkyExp2Quest",
+        "questCFrame": [-7906, 5634, -1411]
+    },
+    {
+        "minLevel": 625,
+        "maxLevel": 649,
+        "monsterName": "Galley Pirate",
+        "monsterSpawnName": "Galley Pirate [Lv. 625]",
+        "questLevel": 1,
+        "questName": "FountainQuest",
+        "questCFrame": [5259, 37, 4050]
+    },
+    {
+        "minLevel": 650,
+        "maxLevel": 699,
+        "monsterName": "Galley Captain",
+        "monsterSpawnName": "Galley Captain [Lv. 650]",
+        "questLevel": 2,
+        "questName": "FountainQuest",
+        "questCFrame": [5259, 37, 4050]
+    }
+]
