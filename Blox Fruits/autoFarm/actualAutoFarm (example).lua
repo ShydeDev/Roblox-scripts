@@ -2,7 +2,7 @@
 _G.autoFarm = true
 _G.rejoinTime = 15 -- minutes
 _G.enableTimeLabel = true
-_G.selectedWeaponName = "Electric Claw"
+_G.selectedWeaponName = "Combat" -- Put exact name of your weapon (melee)
 
 -- GLOBAL FAST ATTACK SETTINGS --
 local manualAttack = false -- perfoms clicks by pressing left mouse
@@ -36,6 +36,7 @@ local questUi = client:WaitForChild("PlayerGui"):WaitForChild("Main"):WaitForChi
 local questTitle = questUi:WaitForChild("Container"):WaitForChild("QuestTitle"):WaitForChild("Title")
 local enemyFolder = workspace:WaitForChild("Enemies")
 local enemySpawnsFolder = workspace:WaitForChild("_WorldOrigin"):WaitForChild("EnemySpawns")
+local playerCharacterFolder = workspace:WaitForChild("Characters")
 
 -- FAST ATTACK VARIABLES --
 local cameraShaker = require(replicatedStorage.Util.CameraShaker)
@@ -80,6 +81,7 @@ local function isTweening()
     return currentTween and currentTween.PlaybackState == "Playing"
 end
 
+-- Use it if you want, example: Button in gui
 local function stopTween()
     currentTween:Cancel()
     tweenDiedConn:Disconnect()
@@ -139,6 +141,28 @@ local function findNearestEnemy(questController)
         end
     end
     return nearestEnemy
+end
+
+-- player
+local function findNearestPlayer(distance)
+    if not _G.autoFarm then return end
+    local nearestPlayer = nil
+
+    for _, player in playerCharacterFolder:GetChildren() do
+        if player.Name == client.Name then
+            continue
+        end
+        local playerRootPart = player.PrimaryPart
+        if playerRootPart then
+            local distanceClientPlayer = client:DistanceFromCharacter(playerRootPart.Position)
+            if distanceClientPlayer <= distance then
+                nearestPlayer = player
+                break
+            end
+        end
+    end
+
+    return nearestPlayer
 end
 
 -- https://scriptblox.com/script/Blox-Fruits-Script-auto-farm-level-auto-update-open-source-8701
@@ -256,9 +280,12 @@ runService.Heartbeat:Connect(function()
     local character = client.Character or client.CharacterAdded:Wait()
 
     if not _G.autoFarm then
-        if character.PrimaryPart:FindFirstChild("BodyClip") then
-            character.PrimaryPart:FindFirstChild("BodyClip"):Destroy()
+        local bodyClip = character.PrimaryPart:FindFirstChild("BodyClip")
+
+        if bodyClip then
+            bodyClip:Destroy()
         end
+
         fastAttack = false
         noClip = false
         return
@@ -267,6 +294,7 @@ runService.Heartbeat:Connect(function()
     local clientHumanoid = character.Humanoid
     if clientHumanoid.Sit then clientHumanoid.Sit = false end
 
+    -- Quest
     local questController = determineCurrentQuest(client.Data.Level.Value)
     local questInProgress = string.find(questTitle.Text, questController.monsterName) and questUi.Visible
 
@@ -275,26 +303,49 @@ runService.Heartbeat:Connect(function()
         questInProgress = true
     end
     
+    -- Prepare
     noClip = true
     equipHaki()
     equipWeapon()
     cameraShaker:Stop()
 
-    local nearestEnemy = findNearestEnemy(questController)
-    if nearestEnemy then
-        tweenTo(nearestEnemy.PrimaryPart.CFrame + Vector3.yAxis * 25)
-        if (nearestEnemy.PrimaryPart.Position - character.PrimaryPart.Position).Magnitude <= 55 then
+    -- Player detection
+    local nearestPlayer = findNearestPlayer(100)
+    if nearestPlayer then
+        -- Perform action, tween, attack
+        tweenTo(nearestPlayer.PrimaryPart.CFrame + Vector3.yAxis * 25)
 
+        if client:DistanceFromCharacter(nearestPlayer.PrimaryPart.Position) <= 55 then
             if manualAttack then
                 local ac = combatFramework.activeController
-                ac.timeToNextAttack = -1
+                ac.timeToNextAttack = math.huge
                 ac.hitboxMagnitude = 55
                 virtualUser:Button1Down(Vector2.new(1280, 672))
             end
 
             fastAttack = true
         end
+    end
+
+    -- Get neareast enemy
+    local nearestEnemy = findNearestEnemy(questController)
+    if nearestEnemy then
+        -- Perform action, tween, attack
+        tweenTo(nearestEnemy.PrimaryPart.CFrame + Vector3.yAxis * 25)
+        if (nearestEnemy.PrimaryPart.Position - character.PrimaryPart.Position).Magnitude <= 55 then
+
+            if manualAttack then
+                local ac = combatFramework.activeController
+                ac.timeToNextAttack = math.huge
+                ac.hitboxMagnitude = 55
+                virtualUser:Button1Down(Vector2.new(1280, 672))
+            end
+
+            fastAttack = true
+        end
+
     else
+        -- Teleport to quest giver if no enemy
         tweenTo(CFrame.new(unpack(questController.questCFrame)) - Vector3.yAxis * 10)
 
         for _, spawn in enemySpawnsFolder:GetChildren() do
@@ -304,6 +355,28 @@ runService.Heartbeat:Connect(function()
         end
     end
 end)
+
+-- Clipboard
+setclipboard("https://github.com/ShydeDev/Roblox-scripts/tree/main/Blox%20Fruits/autoFarm")
+
+-- GUI --
+if not client:WaitForChild("PlayerGui"):FindFirstChild("https://github.com/ShydeDev/") then
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "https://github.com/ShydeDev/"
+    gui.Parent = client:WaitForChild("PlayerGui")
+
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Size = UDim2.new(0, 340, 0, 70)
+    textLabel.Position = UDim2.new(0.5, -100, 0.5, -25)
+    textLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+    textLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+    textLabel.TextScaled = true
+    textLabel.BackgroundTransparency = 1
+    textLabel.TextTransparency = 1
+    textLabel.Parent = gui
+end
+
+local textLabel = client:WaitForChild("PlayerGui"):WaitForChild("https://github.com/ShydeDev/"):WaitForChild("TextLabel")
 
 -- LOOPS --
 task.spawn(function()
@@ -315,20 +388,11 @@ task.spawn(function()
         end
 
         if _G.enableTimeLabel then
-            local gui = Instance.new("ScreenGui")
-            gui.Parent = client:WaitForChild("PlayerGui")
-        
-            local textLabel = Instance.new("TextLabel")
-            textLabel.Size = UDim2.new(0, 340, 0, 70)
-            textLabel.Position = UDim2.new(0.5, -100, 0.5, -25)
-            textLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-            textLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-            textLabel.TextScaled = true 
-            textLabel.Parent = gui
-
             local minutes = math.floor(remainingTime / 60)
             local seconds = math.floor(remainingTime % 60)
             textLabel.Text = "Remaining time until rejoin: ".. minutes.." minutes, ".. seconds.. " seconds"
+            textLabel.BackgroundTransparency = 0
+            textLabel.TextTransparency = 0
         end
         
         task.wait(1)
@@ -337,10 +401,10 @@ end)
 
 while true do
     local ac = combatFramework.activeController
-    
+
     if ac and ac.equipped then
         if fastAttack then
-            local cooldown = if _G.fastAttackOptions["Slow"] then 0.7 elseif _G.fastAttackOptions["Normal"] then 0.1 else 0.01
+            local cooldown = if _G.fastAttackOptions["Slow"] then 0.3 elseif _G.fastAttackOptions["Normal"] then 0.1 else 0.01
             AttackFunction()
             task.wait(cooldown)
         end
