@@ -145,18 +145,18 @@ end
 local function CurrentWeapon()
 	local ac = combatFramework.activeController
 	local ret = ac.blades[1]
-    	local character = client.Character or client.CharacterAdded:Wait()
+    local character = client.Character or client.CharacterAdded:Wait()
 	if not ret then return character:FindFirstChildOfClass("Tool").Name end
 
 	pcall(function()
-	    while ret.Parent ~= character do
-                ret=ret.Parent
-            end
+		while ret.Parent ~= character do
+            ret=ret.Parent
+        end
 	end)
 
 	if not ret then
-            return character:FindFirstChildOfClass("Tool").Name
-    	end
+        return character:FindFirstChildOfClass("Tool").Name
+    end
 
 	return ret
 end
@@ -165,7 +165,7 @@ end
 
 local function getAllBladeHits(Sizes)
 	local Hits = {}
-    	local enemies = enemyFolder:GetChildren()
+    local enemies = enemyFolder:GetChildren()
 
 	for i = 1, #enemies do
         local v = enemies[i]
@@ -207,9 +207,9 @@ local function AttackFunction()
 
 				for _, v in ac.animator.anims.basic do
 					v:Play(0.01,0.01,0.01)
-				end
-				
-                		local character = client.Character or client.CharacterAdded:Wait()
+				end  
+
+                local character = client.Character or client.CharacterAdded:Wait()
 				if character:FindFirstChildOfClass("Tool") and ac.blades and ac.blades[1] then 
 					replicatedStorage.RigControllerEvent:FireServer("weaponChange",tostring(CurrentWeapon()))
 					replicatedStorage.Remotes.Validator:FireServer(math.floor(NumberAc12 / 1099511627776 * 16777215), AcAttack10)
@@ -254,6 +254,7 @@ end)
 
 runService.Heartbeat:Connect(function()
     local character = client.Character or client.CharacterAdded:Wait()
+
     if not _G.autoFarm then
         if character.PrimaryPart:FindFirstChild("BodyClip") then
             character.PrimaryPart:FindFirstChild("BodyClip"):Destroy()
@@ -304,9 +305,6 @@ runService.Heartbeat:Connect(function()
     end
 end)
 
--- GUI
-
-
 -- LOOPS --
 task.spawn(function()
     while true do
@@ -339,6 +337,7 @@ end)
 
 while true do
     local ac = combatFramework.activeController
+    
     if ac and ac.equipped then
         if fastAttack then
             local cooldown = if _G.fastAttackOptions["Slow"] then 0.7 elseif _G.fastAttackOptions["Normal"] then 0.1 else 0.01
