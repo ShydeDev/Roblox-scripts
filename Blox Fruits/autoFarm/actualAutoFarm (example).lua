@@ -131,8 +131,8 @@ local function findNearestEnemy(questController)
 
             if enemyHead or enemyHumanoid then
                 if enemyHead.Transparency ~= 1 or enemyHumanoid.Health ~= 0  then
-                    local character = client.Character or client.CharacterAdded:Wait()
-                    local dist = (character.PrimaryPart.Position - enemy.HumanoidRootPart.Position).Magnitude
+
+                    local dist = client:DistanceFromCharacter(enemy.PrimaryPart.Position)
                     if dist < math.huge then
                         nearestEnemy = enemy
                     end
@@ -332,8 +332,8 @@ runService.Heartbeat:Connect(function()
     if nearestEnemy then
         -- Perform action, tween, attack
         tweenTo(nearestEnemy.PrimaryPart.CFrame + Vector3.yAxis * 25)
-        if (nearestEnemy.PrimaryPart.Position - character.PrimaryPart.Position).Magnitude <= 55 then
 
+        if client:DistanceFromCharacter(nearestEnemy.PrimaryPart.Position) <= 55 then
             if manualAttack then
                 local ac = combatFramework.activeController
                 ac.timeToNextAttack = math.huge
