@@ -2,15 +2,19 @@
 local heartbeat = game:GetService("RunService").Heartbeat
 local cameraShaker = require(game:GetService("ReplicatedStorage").Util.CameraShaker)
 local combatFrameworkRequire = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-local combatFrameworkActiveController = debug.getupvalue(combatFrameworkRequire, 2).activeController
+local combatFramework = debug.getupvalue(combatFrameworkRequire, 2)
 local attackConnection
 
 -- FUNCTIONS --
 local function updateController()
-    combatFrameworkActiveController.timeToNextAttack = -1
-    combatFrameworkActiveController.hitboxMagnitude = 350
-    combatFrameworkActiveController.attacking = false
-    combatFrameworkActiveController.blocking = false
+    local combatFrameworkAC = combatFramework.activeController
+
+    if combatFrameworkAC and combatFrameworkAC.equipped then
+        combatFrameworkAC.timeToNextAttack = -1
+        combatFrameworkAC.hitboxMagnitude = 350
+        combatFrameworkAC.attacking = false
+        combatFrameworkAC.blocking = false
+    end
 end
 
 local function fastAttack(enable: boolean)
