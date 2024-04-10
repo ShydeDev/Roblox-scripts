@@ -1,6 +1,6 @@
 -- GLOBAL SCRIPT SETTINGS --
 _G.autoFarm = true
-_G.rejoinTime = 15 -- minutes
+_G.rejoinTime = 5 -- minutes
 _G.enableTimeLabel = true
 _G.selectedWeaponName = "Combat" -- Put exact name of your weapon (melee)
 
@@ -8,8 +8,8 @@ _G.selectedWeaponName = "Combat" -- Put exact name of your weapon (melee)
 local manualAttack = false -- perfoms clicks by pressing left mouse
 _G.fastAttackOptions = { -- perfoms attack by executing a decompiled script
     ["Slow"] = false,
-    ["Normal"] = true,
-    ["Fast"] = false,
+    ["Normal"] = false,
+    ["Fast"] = true,
 }
 
 -- SCRIPT SETTINGS --
@@ -123,6 +123,7 @@ end
 local function findNearestEnemy(questController)
     if not _G.autoFarm then return end
     local nearestEnemy = nil
+    local maxDistance = math.huge
 
     for _, enemy in enemyFolder:GetChildren() do
         if enemy.Name == questController.monsterName then
@@ -131,15 +132,17 @@ local function findNearestEnemy(questController)
 
             if enemyHead or enemyHumanoid then
                 if enemyHead.Transparency ~= 1 or enemyHumanoid.Health ~= 0  then
-
                     local dist = client:DistanceFromCharacter(enemy.PrimaryPart.Position)
-                    if dist < math.huge then
+
+                    if dist < maxDistance then
                         nearestEnemy = enemy
+                        maxDistance = dist
                     end
                 end
             end
         end
     end
+
     return nearestEnemy
 end
 
@@ -152,11 +155,14 @@ local function findNearestPlayer(distance)
         if player.Name == client.Name then
             continue
         end
+
         local playerRootPart = player.PrimaryPart
         if playerRootPart then
             local distanceClientPlayer = client:DistanceFromCharacter(playerRootPart.Position)
+
             if distanceClientPlayer <= distance then
                 nearestPlayer = player
+                distance = distanceClientPlayer
                 break
             end
         end
@@ -185,8 +191,6 @@ local function CurrentWeapon()
 	return ret
 end
 
-
-
 local function getAllBladeHits(Sizes)
 	local Hits = {}
     local enemies = enemyFolder:GetChildren()
@@ -208,33 +212,26 @@ local function AttackFunction()
 		for indexincrement = 1, 1 do
 			local bladehit = getAllBladeHits(60)
 			if #bladehit > 0 then
-
 				local AcAttack8 = debug.getupvalue(ac.attack, 5)
 				local AcAttack9 = debug.getupvalue(ac.attack, 6)
 				local AcAttack7 = debug.getupvalue(ac.attack, 4)
 				local AcAttack10 = debug.getupvalue(ac.attack, 7)
 				local NumberAc12 = (AcAttack8 * 798405 + AcAttack7 * 727595) % AcAttack9
 				local NumberAc13 = AcAttack7 * 798405
-
 				(function()
 					NumberAc12 = (NumberAc12 * AcAttack9 + NumberAc13) % 1099511627776
 					AcAttack8 = math.floor(NumberAc12 / AcAttack9)
 					AcAttack7 = NumberAc12 - AcAttack8 * AcAttack9
 				end)()
-
 				AcAttack10 = AcAttack10 + 1
-
 				debug.setupvalue(ac.attack, 5, AcAttack8)
 				debug.setupvalue(ac.attack, 6, AcAttack9)
 				debug.setupvalue(ac.attack, 4, AcAttack7)
 				debug.setupvalue(ac.attack, 7, AcAttack10)
-
-				for _, v in ac.animator.anims.basic do
+				for k, v in pairs(ac.animator.anims.basic) do
 					v:Play(0.01,0.01,0.01)
-				end  
-
-                local character = client.Character or client.CharacterAdded:Wait()
-				if character:FindFirstChildOfClass("Tool") and ac.blades and ac.blades[1] then 
+				end                 
+				if client.Character:FindFirstChildOfClass("Tool") and ac.blades and ac.blades[1] then 
 					replicatedStorage.RigControllerEvent:FireServer("weaponChange",tostring(CurrentWeapon()))
 					replicatedStorage.Remotes.Validator:FireServer(math.floor(NumberAc12 / 1099511627776 * 16777215), AcAttack10)
 					replicatedStorage.RigControllerEvent:FireServer("hit", bladehit, 2, "") 
@@ -304,26 +301,23 @@ runService.Heartbeat:Connect(function()
     end
     
     -- Prepare
+    sethiddenproperty(client, "SimulationRadius", math.huge) -- Idk if it works, but it should change the update distance
     noClip = true
     equipHaki()
     equipWeapon()
     cameraShaker:Stop()
 
     -- Player detection
-    local nearestPlayer = findNearestPlayer(100)
+    local nearestPlayer = findNearestPlayer(700)
     if nearestPlayer then
         -- Perform action, tween, attack
-        tweenTo(nearestPlayer.PrimaryPart.CFrame + Vector3.yAxis * 25)
+        tweenTo(nearestPlayer.PrimaryPart.CFrame + Vector3.yAxis * 24)
 
-        if client:DistanceFromCharacter(nearestPlayer.PrimaryPart.Position) <= 55 then
-            if manualAttack then
-                local ac = combatFramework.activeController
-                ac.timeToNextAttack = math.huge
-                ac.hitboxMagnitude = 55
-                virtualUser:Button1Down(Vector2.new(1280, 672))
-            end
-
-            fastAttack = true
+        if client:DistanceFromCharacter(nearestPlayer.PrimaryPart.Position) <= 25 then
+            local ac = combatFramework.activeController
+            ac.timeToNextAttack = math.huge
+            ac.hitboxMagnitude = 55
+            virtualUser:Button1Down(Vector2.new(1280, 672))
         end
     end
 
@@ -331,13 +325,13 @@ runService.Heartbeat:Connect(function()
     local nearestEnemy = findNearestEnemy(questController)
     if nearestEnemy then
         -- Perform action, tween, attack
-        tweenTo(nearestEnemy.PrimaryPart.CFrame + Vector3.yAxis * 25)
+        tweenTo(nearestEnemy.PrimaryPart.CFrame + Vector3.yAxis * 20)
 
-        if client:DistanceFromCharacter(nearestEnemy.PrimaryPart.Position) <= 55 then
+        if client:DistanceFromCharacter(nearestEnemy.PrimaryPart.Position) <= 25 then
             if manualAttack then
                 local ac = combatFramework.activeController
                 ac.timeToNextAttack = math.huge
-                ac.hitboxMagnitude = 55
+                ac.hitboxMagnitude = 25
                 virtualUser:Button1Down(Vector2.new(1280, 672))
             end
 
@@ -350,7 +344,7 @@ runService.Heartbeat:Connect(function()
 
         for _, spawn in enemySpawnsFolder:GetChildren() do
             if spawn.Name == determineCurrentQuest(client.Data.Level.Value).monsterSpawnName then
-                tweenTo(spawn.CFrame + Vector3.yAxis * 50)
+                tweenTo(spawn.CFrame + Vector3.yAxis * 25)
             end
         end
     end
@@ -404,7 +398,7 @@ while true do
 
     if ac and ac.equipped then
         if fastAttack then
-            local cooldown = if _G.fastAttackOptions["Slow"] then 0.3 elseif _G.fastAttackOptions["Normal"] then 0.1 else 0.01
+            local cooldown = if _G.fastAttackOptions["Slow"] then 0.4 elseif _G.fastAttackOptions["Normal"] then 0.3 else 0.15
             AttackFunction()
             task.wait(cooldown)
         end
