@@ -301,7 +301,7 @@ runService.Heartbeat:Connect(function()
     end
     
     -- Prepare
-    sethiddenproperty(client, "SimulationRadius", math.huge) -- Idk if it works, but it should change the update distance
+    sethiddenproperty(client, "MaxSimulationRadius", math.huge) -- Idk if it works, but it should change the update distance
     noClip = true
     equipHaki()
     equipWeapon()
