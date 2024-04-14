@@ -6,7 +6,8 @@
         "monsterSpawnName": "Bandit [Lv. 5]",
         "questLevel": 1,
         "questName": "BanditQuest1",
-        "questCFrame": [1059, 15, 1550]
+        "questCFrame": [1059, 15, 1550],
+        "tweenLocation": [964, 16, 1557]
     },
     {
         "minLevel": 10,
@@ -15,7 +16,8 @@
         "monsterSpawnName": "Monkey [Lv. 14]",
         "questLevel": 1,
         "questName": "JungleQuest",
-        "questCFrame": [-1598, 35, 153]
+        "questCFrame": [-1598, 35, 153],
+        "tweenLocation": [-1613, 55, 125]
     },
     {
         "minLevel": 15,
@@ -24,7 +26,8 @@
         "monsterSpawnName": "Gorilla [Lv. 20]",
         "questLevel": 2,
         "questName": "JungleQuest",
-        "questCFrame": [-1598, 35, 153]
+        "questCFrame": [-1598, 35, 153],
+        "tweenLocation": [-1181, 15, -493]
     },
     {
         "minLevel": 30,
@@ -33,7 +36,8 @@
         "monsterSpawnName": "Pirate [Lv. 35]",
         "questLevel": 1,
         "questName": "BuggyQuest1",
-        "questCFrame": [-1141, 4, 3831]
+        "questCFrame": [-1141, 4, 3831],
+        "tweenLocation": [-1216, 20, 3923]
     },
     {
         "minLevel": 40,
@@ -42,7 +46,8 @@
         "monsterSpawnName": "Brute [Lv. 45]",
         "questLevel": 2,
         "questName": "BuggyQuest1",
-        "questCFrame": [-1141, 4, 3831]
+        "questCFrame": [-1141, 4, 3831],
+        "tweenLocation": [-1113, 25, 4314]
     },
     {
         "minLevel": 60,
@@ -51,7 +56,8 @@
         "monsterSpawnName": "Desert Bandit [Lv. 60]",
         "questLevel": 1,
         "questName": "DesertQuest",
-        "questCFrame": [894, 5, 4392]
+        "questCFrame": [894, 5, 4392],
+        "tweenLocation": [925, 15, 4475]
     },
     {
         "minLevel": 75,
@@ -60,7 +66,8 @@
         "monsterSpawnName": "Desert Officer [Lv. 70]",
         "questLevel": 2,
         "questName": "DesertQuest",
-        "questCFrame": [894, 5, 4392]
+        "questCFrame": [894, 5, 4392],
+        "tweenLocation": [1597, 15, 4361]
     },
     {
         "minLevel": 90,
@@ -69,7 +76,8 @@
         "monsterSpawnName": "Snow Bandit [Lv. 90]",
         "questLevel": 1,
         "questName": "SnowQuest",
-        "questCFrame": [1389, 88, -1298]
+        "questCFrame": [1389, 88, -1298],
+        "tweenLocation": [1361, 120, -1323]
     },
     {
         "minLevel": 100,
@@ -78,7 +86,8 @@
         "monsterSpawnName": "Snowman [Lv. 100]",
         "questLevel": 2,
         "questName": "SnowQuest",
-        "questCFrame": [1389, 88, -1298]
+        "questCFrame": [1389, 88, -1298],
+        "tweenLocation": [1152, 120, -1526]
     },
     {
         "minLevel": 120,
@@ -87,7 +96,8 @@
         "monsterSpawnName": "Chief Petty Officer [Lv. 120]",
         "questLevel": 1,
         "questName": "MarineQuest2",
-        "questCFrame": [-5039, 27, 4324]
+        "questCFrame": [-5039, 27, 4324],
+        "tweenLocation": [-4948, 35, 4010]
     },
     {
         "minLevel": 150,
@@ -96,7 +106,8 @@
         "monsterSpawnName": "Sky Bandit [Lv. 150]",
         "questLevel": 1,
         "questName": "SkyQuest",
-        "questCFrame": [-4839, 716, -2619]
+        "questCFrame": [-4839, 716, -2619],
+        "tweenLocation": [-4955, 295, -2902]
     },
     {
         "minLevel": 175,
@@ -105,7 +116,8 @@
         "monsterSpawnName": "Dark Master [Lv. 175]",
         "questLevel": 2,
         "questName": "SkyQuest",
-        "questCFrame": [-4839, 716, -2619]
+        "questCFrame": [-4839, 716, -2619],
+        "tweenLocation": [-5225, 445, -2278]
     },
     {
         "minLevel": 190,
@@ -114,7 +126,8 @@
         "monsterSpawnName": "Prisoner [Lv. 190]",
         "questLevel": 1,
         "questName": "PrisonerQuest",
-        "questCFrame": [5308, 1, 475]
+        "questCFrame": [5308, 1, 475],
+        "tweenLocation": [5309, 88, 769]
     },
     {
         "minLevel": 210,
@@ -123,7 +136,8 @@
         "monsterSpawnName": "Dangerous Prisoner [Lv. 210]",
         "questLevel": 2,
         "questName": "PrisonerQuest",
-        "questCFrame": [5308, 1, 475]
+        "questCFrame": [5308, 1, 475],
+        "tweenLocation": [5309, 88, 769]
     },
     {
         "minLevel": 250,
@@ -132,7 +146,8 @@
         "monsterSpawnName": "Toga Warrior [Lv. 250]",
         "questLevel": 1,
         "questName": "ColosseumQuest",
-        "questCFrame": [-1580, 6, -2986]
+        "questCFrame": [-1580, 6, -2986],
+        "tweenLocation": [-1896, 23, -2759]
     },
     {
         "minLevel": 275,
@@ -141,7 +156,8 @@
         "monsterSpawnName": "Gladiator [Lv. 275]",
         "questLevel": 2,
         "questName": "ColosseumQuest",
-        "questCFrame": [-1580, 6, -2986]
+        "questCFrame": [-1580, 6, -2986],
+        "tweenLocation": [-1296, 23, -3269]
     },
     {
         "minLevel": 300,
@@ -150,7 +166,8 @@
         "monsterSpawnName": "Military Soldier [Lv. 300]",
         "questLevel": 1,
         "questName": "MagmaQuest",
-        "questCFrame": [-5313, 10, 8515]
+        "questCFrame": [-5313, 10, 8515],
+        "tweenLocation": [-5443, 23, 8444]
     },
     {
         "minLevel": 325,
@@ -159,7 +176,8 @@
         "monsterSpawnName": "Military Spy [Lv. 325]",
         "questLevel": 2,
         "questName": "MagmaQuest",
-        "questCFrame": [-5313, 10, 8515]
+        "questCFrame": [-5313, 10, 8515],
+        "tweenLocation": [-5818, 93, 8805]
     },
     {
         "minLevel": 375,
@@ -168,7 +186,8 @@
         "monsterSpawnName": "Fishman Warrior [Lv. 375]",
         "questLevel": 1,
         "questName": "FishmanQuest",
-        "questCFrame": [61122, 18, 1569]
+        "questCFrame": [61122, 18, 1569],
+        "tweenLocation": [60997, 100, 1411]
     },
     {
         "minLevel": 400,
@@ -177,7 +196,8 @@
         "monsterSpawnName": "Fishman Commando [Lv. 400]",
         "questLevel": 2,
         "questName": "FishmanQuest",
-        "questCFrame": [61122, 18, 1569]
+        "questCFrame": [61122, 18, 1569],
+        "tweenLocation": [61909, 30, 1490]
     },
     {
         "minLevel": 450,
@@ -186,7 +206,8 @@
         "monsterSpawnName": "God's Guard [Lv. 450]",
         "questLevel": 1,
         "questName": "SkyExp1Quest",
-        "questCFrame": [-4721, 843, -1949]
+        "questCFrame": [-4721, 843, -1949],
+        "tweenLocation": [-4720, 8745, -1941]
     },
     {
         "minLevel": 475,
@@ -195,7 +216,8 @@
         "monsterSpawnName": "Shanda [Lv. 475]",
         "questLevel": 2,
         "questName": "SkyExp1Quest",
-        "questCFrame": [-7859, 5544, -381]
+        "questCFrame": [-7859, 5544, -381],
+        "tweenLocation": [-7674, 5580, -498]
     },
     {
         "minLevel": 525,
@@ -204,7 +226,8 @@
         "monsterSpawnName": "Royal Squad [Lv. 525]",
         "questLevel": 1,
         "questName": "SkyExp2Quest",
-        "questCFrame": [-7906, 5634, -1411]
+        "questCFrame": [-7906, 5634, -1411],
+        "tweenLocation": [-7637, 5625, -1459]
     },
     {
         "minLevel": 550,
@@ -213,7 +236,8 @@
         "monsterSpawnName": "Royal Soldier [Lv. 550]",
         "questLevel": 2,
         "questName": "SkyExp2Quest",
-        "questCFrame": [-7906, 5634, -1411]
+        "questCFrame": [-7906, 5634, -1411],
+        "tweenLocation": [-7836, 5690, -1786]
     },
     {
         "minLevel": 625,
@@ -222,7 +246,8 @@
         "monsterSpawnName": "Galley Pirate [Lv. 625]",
         "questLevel": 1,
         "questName": "FountainQuest",
-        "questCFrame": [5259, 37, 4050]
+        "questCFrame": [5259, 37, 4050],
+        "tweenLocation": [5593, 145, 3967]
     },
     {
         "minLevel": 650,
@@ -231,6 +256,7 @@
         "monsterSpawnName": "Galley Captain [Lv. 650]",
         "questLevel": 2,
         "questName": "FountainQuest",
-        "questCFrame": [5259, 37, 4050]
+        "questCFrame": [5259, 37, 4050],
+        "tweenLocation": [5687, 50, 4954]
     }
 ]
