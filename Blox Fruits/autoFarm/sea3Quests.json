@@ -6,7 +6,9 @@
       "monsterSpawnName": "Pirate Millionaire [Lv. 1500]",
       "questLevel": 1,
       "questName": "PiratePortQuest",
-      "questCFrame": [ -290, 42, 5581 ]
+      "questCFrame": [ -290, 42, 5581 ],
+      "tweenLocation": [-587, 75, 5543],
+      "tweenLocation2": [-35, 75, 5675]
     },
     {
       "minLevel": 1525,
@@ -15,7 +17,8 @@
       "monsterSpawnName": "Pistol Billionaire [Lv. 1525]",
       "questLevel": 2,
       "questName": "PiratePortQuest",
-      "questCFrame": [ -290, 42, 5581 ]
+      "questCFrame": [ -290, 42, 5581 ],
+      "tweenLocation": [-51, 100, 6118],
     },
     {
       "minLevel": 1575,
@@ -24,7 +27,9 @@
       "monsterSpawnName": "Dragon Crew Warrior [Lv. 1575]",
       "questLevel": 1,
       "questName": "AmazonQuest",
-      "questCFrame": [ 5832, 51, -1101 ]
+      "questCFrame": [ 5832, 51, -1101 ],
+      "tweenLocation": [6508, 100, -940],
+      "tweenLocation2": [6139, 100, -1496]
     },
     {
       "minLevel": 1600,
@@ -33,7 +38,9 @@
       "monsterSpawnName": "Dragon Crew Archer [Lv. 1600]",
       "questLevel": 2,
       "questName": "AmazonQuest",
-      "questCFrame": [ 5833, 51, -1103 ]
+      "questCFrame": [ 5833, 51, -1103 ],
+      "tweenLocation": [6513, 400, -112],
+      "tweenLocation2": [6663, 430, 325]
     },
     {
       "minLevel": 1625,
@@ -42,7 +49,9 @@
       "monsterSpawnName": "Female Islander [Lv. 1625]",
       "questLevel": 1,
       "questName": "AmazonQuest2",
-      "questCFrame": [ 5446, 601, 749 ]
+      "questCFrame": [ 5446, 601, 749 ],
+      "tweenLocation": [5675, 830, 866],
+      "tweenLocation2": [4740, 800, 649]
     },
     {
       "minLevel": 1650,
@@ -51,7 +60,8 @@
       "monsterSpawnName": "Giant Islander [Lv. 1650]",
       "questLevel": 2,
       "questName": "AmazonQuest2",
-      "questCFrame": [ 5446, 601, 749 ]
+      "questCFrame": [ 5446, 601, 749 ],
+      "tweenLocation": [4956, 700, -43],
     },
     {
       "minLevel": 1700,
@@ -60,7 +70,9 @@
       "monsterSpawnName": "Marine Commodore [Lv. 1700]",
       "questLevel": 1,
       "questName": "MarineTreeIsland",
-      "questCFrame": [ 2180, 27, -6741 ]
+      "questCFrame": [ 2180, 27, -6741 ],
+      "tweenLocation": [2275, 150, -7148],
+      "tweenLocation2": [2775, 150, -7850]
     },
     {
       "minLevel": 1725,
@@ -69,7 +81,8 @@
       "monsterSpawnName": "Marine Rear Admiral [Lv. 1725]",
       "questLevel": 2,
       "questName": "MarineTreeIsland",
-      "questCFrame": [ 2179, 28, -6740 ]
+      "questCFrame": [ 2179, 28, -6740 ],
+      "tweenLocation": [3664, 230, -7016]
     },
     {
       "minLevel": 1775,
@@ -78,7 +91,8 @@
       "monsterSpawnName": "Fishman Raider [Lv. 1775]",
       "questLevel": 1,
       "questName": "DeepForestIsland3",
-      "questCFrame": [ -10581, 330, -8761 ]
+      "questCFrame": [ -10581, 330, -8761 ],
+      "tweenLocation": [-10516, 400, -8431]
     },
     {
       "minLevel": 1800,
@@ -87,7 +101,8 @@
       "monsterSpawnName": "Fishman Captain [Lv. 1800]",
       "questLevel": 2,
       "questName": "DeepForestIsland3",
-      "questCFrame": [ -10581, 330, -8761 ]
+      "questCFrame": [ -10581, 330, -8761 ],
+      "tweenLocation": [-10985, 420, -8942]
     },
     {
       "minLevel": 1825,
@@ -96,7 +111,8 @@
       "monsterSpawnName": "Forest Pirate [Lv. 1825]",
       "questLevel": 1,
       "questName": "DeepForestIsland",
-      "questCFrame": [ -13234, 331, -7625 ]
+      "questCFrame": [ -13234, 331, -7625 ],
+      "tweenLocation": [-13467, 415, -7809]
     },
     {
       "minLevel": 1850,
@@ -105,7 +121,9 @@
       "monsterSpawnName": "Mythological Pirate [Lv. 1850]",
       "questLevel": 2,
       "questName": "DeepForestIsland",
-      "questCFrame": [ -13234, 331, -7625 ]
+      "questCFrame": [ -13234, 331, -7625 ],
+      "tweenLocation": [-13680, 530, -6995],
+      "tweenLocation2": [-13173, 630, -6794]
     },
     {
       "minLevel": 1900,
@@ -114,7 +132,9 @@
       "monsterSpawnName": "Jungle Pirate [Lv. 1900]",
       "questLevel": 1,
       "questName": "DeepForestIsland2",
-      "questCFrame": [ -12680, 389, -9902 ]
+      "questCFrame": [ -12680, 389, -9902 ],
+      "tweenLocation": [-11771, 400, -10602],
+      "tweenLocation2": [-12282, 420, -10493]
     },
     {
       "minLevel": 1925,
@@ -123,7 +143,8 @@
       "monsterSpawnName": "Musketeer Pirate [Lv. 1925]",
       "questLevel": 2,
       "questName": "DeepForestIsland2",
-      "questCFrame": [ -12680, 389, -9902 ]
+      "questCFrame": [ -12680, 389, -9902 ],
+      "tweenLocation": [-13307, 460, -9786]
     },
     {
       "minLevel": 1975,
@@ -132,7 +153,9 @@
       "monsterSpawnName": "Reborn Skeleton [Lv. 1975]",
       "questLevel": 1,
       "questName": "HauntedQuest1",
-      "questCFrame": [ -9479, 141, 5566 ]
+      "questCFrame": [ -9479, 141, 5566 ],
+      "tweenLocation": [-8768, 230, 6007]
+      "dropBones": 1
     },
     {
       "minLevel": 2000,
@@ -141,7 +164,9 @@
       "monsterSpawnName": "Living Zombie [Lv. 2000]",
       "questLevel": 2,
       "questName": "HauntedQuest1",
-      "questCFrame": [ -9479, 141, 5566 ]
+      "questCFrame": [ -9479, 141, 5566 ],
+      "tweenLocation": [-10160, 200, 5976]
+      "dropBones": 1
     },
     {
       "minLevel": 2025,
@@ -150,7 +175,9 @@
       "monsterSpawnName": "Demonic Soul [Lv. 2025]",
       "questLevel": 1,
       "questName": "HauntedQuest2",
-      "questCFrame": [ -9516, 172, 6078 ]
+      "questCFrame": [ -9516, 172, 6078 ],
+      "tweenLocation": [-9503, 205, 6130]
+      "dropBones": 1
     },
     {
       "minLevel": 2050,
@@ -159,7 +186,9 @@
       "monsterSpawnName": "Posessed Mummy [Lv. 2050]",
       "questLevel": 2,
       "questName": "HauntedQuest2",
-      "questCFrame": [ -9516, 172, 6078 ]
+      "questCFrame": [ -9516, 172, 6078 ],
+      "tweenLocation": [-9581, 30, 6202]
+      "dropBones": 1
     },
     {
       "minLevel": 2075,
@@ -168,7 +197,8 @@
       "monsterSpawnName": "Peanut Scout [Lv. 2075]",
       "questLevel": 1,
       "questName": "NutsIslandQuest",
-      "questCFrame": [ -2104, 38, -10194 ]
+      "questCFrame": [ -2104, 38, -10194 ],
+      "tweenLocation": [-2118, 150, -10099]
     },
     {
       "minLevel": 2100,
@@ -177,7 +207,8 @@
       "monsterSpawnName": "Peanut President [Lv. 2100]",
       "questLevel": 2,
       "questName": "NutsIslandQuest",
-      "questCFrame": [ -2104, 38, -10194 ]
+      "questCFrame": [ -2104, 38, -10194 ],
+      "tweenLocation": [-2139, 150, -10521]
     },
     {
       "minLevel": 2125,
@@ -186,7 +217,8 @@
       "monsterSpawnName": "Ice Cream Chef [Lv. 2125]",
       "questLevel": 1,
       "questName": "IceCreamIslandQuest",
-      "questCFrame": [ -820, 65, -10965 ]
+      "questCFrame": [ -820, 65, -10965 ],
+      "tweenLocation": [-853, 150, -10980]
     },
     {
       "minLevel": 2150,
@@ -195,7 +227,8 @@
       "monsterSpawnName": "Ice Cream Commander [Lv. 2150]",
       "questLevel": 2,
       "questName": "IceCreamIslandQuest",
-      "questCFrame": [ -820, 65, -10965 ]
+      "questCFrame": [ -820, 65, -10965 ],
+      "tweenLocation": [-813, 160, -11113]
     },
     {
       "minLevel": 2200,
@@ -204,7 +237,8 @@
       "monsterSpawnName": "Cookie Crafter [Lv. 2200]",
       "questLevel": 1,
       "questName": "CakeQuest1",
-      "questCFrame": [ -2021, 37, -12028 ]
+      "questCFrame": [ -2021, 37, -12028 ],
+      "tweenLocation": [-2401, 110, -12126]
     },
     {
       "minLevel": 2225,
@@ -213,7 +247,8 @@
       "monsterSpawnName": "Cake Guard [Lv. 2225]",
       "questLevel": 2,
       "questName": "CakeQuest1",
-      "questCFrame": [ -2021, 37, -12028 ]
+      "questCFrame": [ -2021, 37, -12028 ],
+      "tweenLocation": [-1555, 195, -12326]
     },
     {
       "minLevel": 2250,
@@ -222,7 +257,8 @@
       "monsterSpawnName": "Baking Staff [Lv. 2250]",
       "questLevel": 1,
       "questName": "CakeQuest2",
-      "questCFrame": [ -1927, 37, -12842 ]
+      "questCFrame": [ -1927, 37, -12842 ],
+      "tweenLocation": [-1821, 100, -12938]
     },
     {
       "minLevel": 2275,
@@ -231,7 +267,8 @@
       "monsterSpawnName": "Head Baker [Lv. 2275]",
       "questLevel": 2,
       "questName": "CakeQuest2",
-      "questCFrame": [ -1927, 37, -12842 ]
+      "questCFrame": [ -1927, 37, -12842 ],
+      "tweenLocation": [-2206, 120, -12924]
     },
     {
         "minLevel": 2450,
@@ -240,7 +277,8 @@
         "monsterSpawnName": "Isle Outlaw [Lv. 2450]",
         "questLevel": 1,
         "questName": "TikiQuest1",
-        "questCFrame": [-16548, 55, -172]
+        "questCFrame": [-16548, 55, -172],
+        "tweenLocation": [-16215, 100, -207]
     },
     {
         "minLevel": 2475,
@@ -249,7 +287,8 @@
         "monsterSpawnName": "Island Boy [Lv. 2475]",
         "questLevel": 2,
         "questName": "TikiQuest1",
-        "questCFrame": [-16548, 55, -172]
+        "questCFrame": [-16548, 55, -172],
+        "tweenLocation": [-16719, 100, -194]
     },
     {
         "minLevel": 2500,
@@ -258,7 +297,8 @@
         "monsterSpawnName": "Sun-kissed Warrior [Lv. 2500]",
         "questLevel": 1,
         "questName": "TikiQuest2",
-        "questCFrame": [-16541, 54, 1051]
+        "questCFrame": [-16541, 54, 1051],
+        "tweenLocation": [-16217, 150, 1000]
     },
     {
         "minLevel": 2525,
@@ -267,7 +307,8 @@
         "monsterSpawnName": "Isle Champion [Lv. 2525]",
         "questLevel": 2,
         "questName": "TikiQuest2",
-        "questCFrame": [-16541, 54, 1051]
+        "questCFrame": [-16541, 54, 1051],
+        "tweenLocation": [-16776, 100, 1061]
     }
   ]
   
