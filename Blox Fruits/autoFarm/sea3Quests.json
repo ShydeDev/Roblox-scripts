@@ -18,7 +18,7 @@
       "questLevel": 2,
       "questName": "PiratePortQuest",
       "questCFrame": [ -290, 42, 5581 ],
-      "tweenLocation": [-51, 100, 6118],
+      "tweenLocation": [-51, 100, 6118]
     },
     {
       "minLevel": 1575,
