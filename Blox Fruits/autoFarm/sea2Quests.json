@@ -130,7 +130,8 @@
         "questLevel": 1,
         "questName": "FireSideQuest",
         "questCFrame": [ -5428, 15, -5299 ],
-        "tweenLocation": [-5670, 35, -5770]
+        "tweenLocation": [-5670, 50, -5770],
+        "tweenLocation2": [-5184, 50, -6100]
     },
     {
         "minLevel": 1200,
@@ -150,7 +151,7 @@
         "questLevel": 1,
         "questName": "ShipQuest1",
         "questCFrame": [ 1037, 125, 32911 ],
-        "tweenLocation": []
+        "tweenLocation": [916, 181, 33322]
     },
     {
         "minLevel": 1275,
@@ -160,7 +161,7 @@
         "questLevel": 2,
         "questName": "ShipQuest1",
         "questCFrame": [ 1037, 125, 32911 ],
-        "tweenLocation": []
+        "tweenLocation": [916, 181, 33322]
     },
     {
         "minLevel": 1300,
@@ -170,7 +171,7 @@
         "questLevel": 1,
         "questName": "ShipQuest2",
         "questCFrame": [ 968, 125, 33244 ],
-        "tweenLocation": []
+        "tweenLocation": [916, 181, 33322]
     },
     {
         "minLevel": 1325,
@@ -180,7 +181,7 @@
         "questLevel": 2,
         "questName": "ShipQuest2",
         "questCFrame": [ 968, 125, 33244 ],
-        "tweenLocation": []
+        "tweenLocation": [916, 181, 33322]
     },
     {
         "minLevel": 1350,
