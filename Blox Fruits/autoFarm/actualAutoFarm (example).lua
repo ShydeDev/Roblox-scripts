@@ -61,7 +61,7 @@ local function tweenTo(cframe)
     local character = client.Character or client.CharacterAdded:Wait()
     local rootPart = character and character:WaitForChild("HumanoidRootPart")
     if rootPart then
-        rootPart.Velocity = Vector3.new(0,0,0)
+        rootPart.Velocity = Vector3.zero
 
         local distance = (cframe.Position - rootPart.Position).Magnitude
         local tweenInfo = TweenInfo.new(distance / TWEEN_SPEED, Enum.EasingStyle.Linear)
