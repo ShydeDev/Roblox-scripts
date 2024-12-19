@@ -309,5 +309,25 @@
         "questName": "TikiQuest2",
         "questCFrame": [-16541, 54, 1051],
         "tweenLocation": [-16776, 100, 1061]
+    },
+    {
+        "minLevel": 2551,
+        "maxLevel": 2575,
+        "monsterName": "Serpent Hunter",
+        "monsterSpawnName": "Serpent Hunter [Lv. 2550]",
+        "questLevel": 1,
+        "questName": "TikiQuest3",
+        "questCFrame": [-16665, 104, 1579],
+        "tweenLocation": [-16654, 105, 1579]
+    },
+    {
+        "minLevel": 2576,
+        "maxLevel": 2600,
+        "monsterName": "Skull Slayer",
+        "monsterSpawnName": "Skull Slayer [Lv. 2575]",
+        "questLevel": 2,
+        "questName": "TikiQuest3",
+        "questCFrame": [-16665, 104, 1579],
+        "tweenLocation": [-16654, 105, 1579]
     }
 ]
