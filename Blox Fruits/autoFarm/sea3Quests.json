@@ -302,7 +302,7 @@
     },
     {
         "minLevel": 2525,
-        "maxLevel": 2550,
+        "maxLevel": 2549,
         "monsterName": "Isle Champion",
         "monsterSpawnName": "Isle Champion [Lv. 2525]",
         "questLevel": 2,
@@ -311,8 +311,8 @@
         "tweenLocation": [-16776, 100, 1061]
     },
     {
-        "minLevel": 2551,
-        "maxLevel": 2575,
+        "minLevel": 2550,
+        "maxLevel": 2574,
         "monsterName": "Serpent Hunter",
         "monsterSpawnName": "Serpent Hunter [Lv. 2550]",
         "questLevel": 1,
@@ -321,7 +321,7 @@
         "tweenLocation": [-16654, 105, 1579]
     },
     {
-        "minLevel": 2576,
+        "minLevel": 2575,
         "maxLevel": 2600,
         "monsterName": "Skull Slayer",
         "monsterSpawnName": "Skull Slayer [Lv. 2575]",
