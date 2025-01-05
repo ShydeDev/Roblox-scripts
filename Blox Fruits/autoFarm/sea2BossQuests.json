@@ -1,0 +1,100 @@
+[
+    {
+      "bossName": "Diamond",
+      "questName": "Area1Quest",
+      "questLevel": 3,
+      "cFrameQBoss": [-614.79998779297, 55.631500244141, 6687.2963867188],
+      "cFrameBoss": [-1499.3071289063, 331.88790893555, 6521.6962890625]
+    },
+    {
+      "bossName": "Jeremy",
+      "questName": "Area2Quest",
+      "questLevel": 3,
+      "cFrameQBoss": [-5374.8740234375, 8.590033531189, 8457.0859375],
+      "cFrameBoss": [-5734.0043945313, 8.5615921020508, 8787.6162109375]
+    },
+    {
+      "bossName": "Fajita",
+      "questName": "MarineQuest3",
+      "questLevel": 3,
+      "cFrameQBoss": [-2445.7963867188, 73.016189575195, -3216.8994140625],
+      "cFrameBoss": [-2335.3977050781, 24.526372909546, -4053.2658691406]
+    },
+    {
+      "bossName": "Don Swan",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-391.17974853516, 331.88665771484, 6673.8920898438]
+    },
+    {
+      "bossName": "Smoke Admiral",
+      "questName": "Magma2Quest",
+      "questLevel": 3,
+      "cFrameQBoss": [-5478.7568359375, 12.161420822144, -5270.5390625],
+      "cFrameBoss": [-5928.4921875, 72.541954040527, -5093.6162109375]
+    },
+    {
+      "bossName": "Cursed Captain",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-9328.3564453125, 142.13287353516, 5566.7666015625]
+    },
+    {
+      "bossName": "Tide Keeper",
+      "questName": "ForgottenQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [-3020.70703125, 238.13195800781, -10197.10546875],
+      "cFrameBoss": [-3498.4050292969, 236.56698608398, -9574.4580078125]
+    },
+    {
+      "bossName": "Order",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-5580.2431640625, 493.04220581055, -795.62689208984]
+    },
+    {
+      "bossName": "Stone",
+      "questName": "PrisonerQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [4811.7099609375, 5.6873264312744, 2857.8171386719],
+      "cFrameBoss": [4842.5830078125, 41.105709075928, 2274.9506835938]
+    },
+    {
+      "bossName": "Awakened Ice Admiral",
+      "questName": "IceSideQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [6293.8725585938, 71.421684265137, -1186.9100341797],
+      "cFrameBoss": [6670.3100585938, 77.736465454102, -1244.0999755859]
+    },
+    {
+      "bossName": "Empress",
+      "questName": "AmazonQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [5444.388671875, 603.77160644531, 750.37225341797],
+      "cFrameBoss": [5687.6372070313, 603.77160644531, 631.58709716797]
+    },
+    {
+      "bossName": "Kilo Admiral",
+      "questName": "PiratePortQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [-290.07489013672, 6.0520358085632, 5537.1420898438],
+      "cFrameBoss": [-520.876953125, 40.351871490479, 6077.3510742188]
+    },
+    {
+      "bossName": "Captain Elephant",
+      "questName": "DeepForestQuest3",
+      "questLevel": 3,
+      "cFrameQBoss": [-12251.7626953125, 331.60260009766, -7505.6796875],
+      "cFrameBoss": [-13364.524414063, 331.60260009766, -7831.7270507813]
+    },
+    {
+      "bossName": "Beautiful Pirate",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-11278.361328125, 331.65957641602, -929.19989013672]
+    }
+]
