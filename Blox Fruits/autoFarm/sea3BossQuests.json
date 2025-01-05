@@ -1,0 +1,100 @@
+[
+    {
+      "bossName": "Stone",
+      "questName": "QuestOne",
+      "questLevel": 1,
+      "cFrameQBoss": [-286.52392578125, 7.3094992637634, 5635.0170898438],
+      "cFrameBoss": [-116.85381317139, 138.10444641113, 5980.02734375]
+    },
+    {
+      "bossName": "Island Empress",
+      "questName": "AmazonQuest2",
+      "questLevel": 1,
+      "cFrameQBoss": [5056.1713867188, 5.9873127937317, 657.91845703125],
+      "cFrameBoss": [5390.3422851563, 258.24838256836, 680.18621826172]
+    },
+    {
+      "bossName": "Captain Elephant",
+      "questName": "DeepForestQuest2",
+      "questLevel": 1,
+      "cFrameQBoss": [-12363.620117188, 6.2985987663269, -7071.5971679688],
+      "cFrameBoss": [-12471.842773438, 421.68713378906, -8161.09375]
+    },
+    {
+      "bossName": "Beautiful Pirate",
+      "questName": "BeautifulPirateQuest",
+      "questLevel": 1,
+      "cFrameQBoss": [-12062.712890625, 6.2824392318726, 897.99816894531],
+      "cFrameBoss": [-12149.006835938, 331.70959472656, 1375.9820556641]
+    },
+    {
+      "bossName": "Longma",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-10319.20703125, 332.48120117188, -10125.522460938]
+    },
+    {
+      "bossName": "Kilo Admiral",
+      "questName": "QuestTwo",
+      "questLevel": 1,
+      "cFrameQBoss": [-290.07489013672, 6.0520358085632, 5537.1420898438],
+      "cFrameBoss": [-520.876953125, 40.351871490479, 6077.3510742188]
+    },
+    {
+      "bossName": "Cursed Dual Katana",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-17493.69140625, 147.72911071777, -7352.0180664063]
+    },
+    {
+      "bossName": "Cake Queen",
+      "questName": "CakeQuest1",
+      "questLevel": 1,
+      "cFrameQBoss": [-1848.9365234375, 6.5652456283569, -12089.688476563],
+      "cFrameBoss": [-1819.8475341797, 246.2883605957, -12061.336914063]
+    },
+    {
+      "bossName": "Dough King",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-2021.2274169922, 37.972091674805, -12129.513671875]
+    },
+    {
+      "bossName": "Soul Reaper",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-9519.1767578125, 18.608142852783, 6689.775390625]
+    },
+    {
+      "bossName": "Hydra Island Boss",
+      "questName": "HydraQuest",
+      "questLevel": 1,
+      "cFrameQBoss": [-2300.2348632813, 10.054151535034, -13239.384765625],
+      "cFrameBoss": [-2305.4814453125, 73.825866699219, -13304.752929688]
+    },
+    {
+      "bossName": "Peanut Butter",
+      "questName": "PeanutQuest",
+      "questLevel": 1,
+      "cFrameQBoss": [1006.2914428711, 24.983516693115, -14513.381835938],
+      "cFrameBoss": [1206.7081298828, 24.983518600464, -14626.275390625]
+    },
+    {
+      "bossName": "Gingerbread Man",
+      "questName": "GingerQuest",
+      "questLevel": 1,
+      "cFrameQBoss": [-1113.5926513672, 37.000137329102, -14236.088867188],
+      "cFrameBoss": [-912.47943115234, 37.000137329102, -14586.348632813]
+    },
+    {
+      "bossName": "Dough Master",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-2034.4962158203, 37.972091674805, -12202.870117188]
+    }
+]
