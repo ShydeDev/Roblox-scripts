@@ -1,0 +1,121 @@
+[
+    {
+      "bossName": "The Gorilla King",
+      "questName": "JungleQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [-1601.6553955078, 36.85213470459, 153.38809204102],
+      "cFrameBoss": [-1088.75977, 8.13463783, -488.559906]
+    },
+    {
+      "bossName": "Bobby",
+      "questName": "BuggyQuest1",
+      "questLevel": 3,
+      "cFrameQBoss": [-1140.1761474609, 4.752049446106, 3827.4057617188],
+      "cFrameBoss": [-1087.3760986328, 46.949409484863, 4040.1462402344]
+    },
+    {
+      "bossName": "The Saw",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-784.89715576172, 72.427383422852, 1603.5822753906]
+    },
+    {
+      "bossName": "Yeti",
+      "questName": "SnowQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [1386.8073730469, 87.272789001465, -1298.3576660156],
+      "cFrameBoss": [1218.7956542969, 138.01184082031, -1488.0262451172]
+    },
+    {
+      "bossName": "Mob Leader",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-2844.7307128906, 7.4180502891541, 5356.6723632813]
+    },
+    {
+      "bossName": "Vice Admiral",
+      "questName": "MarineQuest2",
+      "questLevel": 2,
+      "cFrameQBoss": [-5036.2465820313, 28.677835464478, 4324.56640625],
+      "cFrameBoss": [-5006.5454101563, 88.032081604004, 4353.162109375]
+    },
+    {
+      "bossName": "Saber Expert",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-1458.89502, 29.8870335, -50.633564]
+    },
+    {
+      "bossName": "Warden",
+      "questName": "ImpelQuest",
+      "questLevel": 1,
+      "cFrameQBoss": [5191.86133, 2.84020686, 686.438721],
+      "cFrameBoss": [5278.04932, 2.15167475, 944.101929]
+    },
+    {
+      "bossName": "Chief Warden",
+      "questName": "ImpelQuest",
+      "questLevel": 2,
+      "cFrameQBoss": [5191.86133, 2.84020686, 686.438721],
+      "cFrameBoss": [5206.92578, 0.997753382, 814.976746]
+    },
+    {
+      "bossName": "Swan",
+      "questName": "ImpelQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [5191.86133, 2.84020686, 686.438721],
+      "cFrameBoss": [5325.09619, 7.03906584, 719.570679]
+    },
+    {
+      "bossName": "Magma Admiral",
+      "questName": "MagmaQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [-5314.6220703125, 12.262420654297, 8517.279296875],
+      "cFrameBoss": [-5765.8969726563, 82.92064666748, 8718.3046875]
+    },
+    {
+      "bossName": "Fishman Lord",
+      "questName": "FishmanQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [61122.65234375, 18.497442245483, 1569.3997802734],
+      "cFrameBoss": [61260.15234375, 30.950881958008, 1193.4329833984]
+    },
+    {
+      "bossName": "Wysper",
+      "questName": "SkyExp1Quest",
+      "questLevel": 3,
+      "cFrameQBoss": [-7861.947265625, 5545.517578125, -379.85974121094],
+      "cFrameBoss": [-7866.1333007813, 5576.4311523438, -546.74816894531]
+    },
+    {
+      "bossName": "Thunder God",
+      "questName": "SkyExp2Quest",
+      "questLevel": 3,
+      "cFrameQBoss": [-7903.3828125, 5635.9897460938, -1410.923828125],
+      "cFrameBoss": [-7994.984375, 5761.025390625, -2088.6479492188]
+    },
+    {
+      "bossName": "Cyborg",
+      "questName": "FountainQuest",
+      "questLevel": 3,
+      "cFrameQBoss": [5258.2788085938, 38.526931762695, 4050.044921875],
+      "cFrameBoss": [6094.0249023438, 73.770050048828, 3825.7348632813]
+    },
+    {
+      "bossName": "Ice Admiral",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [1266.08948, 26.1757946, -1399.57678]
+    },
+    {
+      "bossName": "Greybeard",
+      "questName": null,
+      "questLevel": null,
+      "cFrameQBoss": null,
+      "cFrameBoss": [-5081.3452148438, 85.221641540527, 4257.3588867188]
+    }
+]
