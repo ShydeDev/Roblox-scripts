@@ -177,3 +177,5 @@ end
 function Utility.hopServer()
     teleportService:Teleport(game.PlaceId, localPlayer)
 end
+
+return Utility
