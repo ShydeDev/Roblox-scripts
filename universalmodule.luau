@@ -37,7 +37,7 @@ end
 
 function Utility.getRootPart(thing: Instance) -- Usage: getRootPart(localPlayer.Character)
     assert(typeof(thing) == "Instance", "Instance hadn't been passed")
-    return thing:FindFirstChild("UpperTorso") or thing:FindFirstChild("HumanoidRootPart")
+    return thing:FindFirstChild("UpperTorso") or thing:FindFirstChild("Torso")
 end
 
 function Utility.sortNearestTable(passedTable: table, object: Instance) -- Usage: sortNearestTable(thingsTable, localPlayer.Character.UpperTorso)
