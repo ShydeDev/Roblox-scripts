@@ -6,8 +6,74 @@ local teleportService = cloneref(game:GetService("TeleportService"))
 local tweenService = cloneref(game:GetService("TweenService"))
 local playerService = cloneref(game:GetService("Players"))
 local localPlayer = cloneref(playerService.localPlayer)
+local camera = cloneref(workspace.CurrentCamera)
 
 -- Functions
+function Utility.getBodyParts()
+    return {
+        -- R6
+        "Head",
+        "Torso",
+        "Left Arm",
+        "Right Arm",
+        "Left Leg",
+        "Right Leg",
+        -- R15
+        "LeftFoot",
+        "LeftHand",
+        "LeftLowerArm",
+        "LeftLowerLeg",
+        "LeftUpperArm",
+        "LeftUpperLeg",
+        "LowerTorso",
+        "RightFoot",
+        "RightHand",
+        "RightLowerArm",
+        "RightLowerLeg",
+        "RightUpperArm",
+        "RightUpperLeg",
+        "UpperTorso"
+    }
+end
+
+function Utility.getCorners()
+    return {
+        Vector3.new(1, 1, 1),
+        Vector3.new(-1, 1, 1),
+        Vector3.new(1, 1, -1),
+        Vector3.new(-1, 1, -1),
+        Vector3.new(1, -1, 1),
+        Vector3.new(-1, -1, 1),
+        Vector3.new(1, -1, -1),
+        Vector3.new(-1, -1, -1),
+    }
+end
+
+function Utility.worldToScreen(world)
+    local screen, isVisible = camera:WorldToViewportPoint(world)
+    return Vector2.new(screen.X, screen.Y), isVisible, screen.Z
+end
+
+function Utility.floor2(vector2)
+    assert(typeof(vector2) == "Vector2", "Vector2 hadn't been passed")
+    return Vector2.new(math.floor(vector2.X), math.floor(vector2.Y))
+end
+
+function Utility.floor3(vector3)
+    assert(typeof(vector3) == "Vector3", "Vector3 hadn't been passed")
+    return Vector3.new(math.floor(vector3.X), math.floor(vector3.Y), math.floor(vector3.Z))
+end
+
+function Utility.abs2(vector2)
+    assert(typeof(vector2) == "Vector2", "Vector2 hadn't been passed")
+    return Vector2.new(math.abs(vector2.X), math.abs(vector2.Y))
+end
+
+function Utility.abs3(vector3)
+    assert(typeof(vector3) == "Vector3", "Vector3 hadn't been passed")
+    return Vector3.new(math.abs(vector3.X), math.abs(vector3.Y), math.abs(vector3.Z))
+end
+
 function Utility.forEach(containers: table, callback: (part: Instance) -> ()) -- Just for loop with get children
     assert(typeof(containers) == "table", "Container hadn't been passed")
     assert(typeof(callback) == "function", "Callback hadn't been passed")
@@ -35,9 +101,33 @@ function Utility.getCharacterFromPlayer(player: Player) -- Just use this instead
     return player.Character or player.CharacterAdded:Wait()
 end
 
-function Utility.getRootPart(thing: Instance) -- Usage: getRootPart(localPlayer.Character)
+function Utility.getTeam(player)
+    return player.Team
+end
+
+function Utility.isFriendly(player)
+    local team = Utility.getTeam(player)
+    local localTeam = Utility.getTeam(localPlayer)
+    return if team then team == localTeam else false
+end
+
+function Utility.getHealth(player)
+    local character = Utility.getCharacterFromPlayer(player)
+    local humanoid = character and character:FindFirstChildWhichIsA("Humanoid")
+    if humanoid then
+        return humanoid.Health, humanoid.MaxHealth
+    end
+    return 0, 0
+end
+
+function Utility.getTorso(thing: Instance) -- Usage: getRootPart(localPlayer.Character)
     assert(typeof(thing) == "Instance", "Instance hadn't been passed")
     return thing:FindFirstChild("UpperTorso") or thing:FindFirstChild("Torso")
+end
+
+function Utility.getRootpart(thing: Instance) -- Usage: getRootPart(localPlayer.Character)
+    assert(typeof(thing) == "Instance", "Instance hadn't been passed")
+    return thing.PrimaryPart
 end
 
 function Utility.sortNearestTable(passedTable: table, object: Instance) -- Usage: sortNearestTable(thingsTable, localPlayer.Character.UpperTorso)
