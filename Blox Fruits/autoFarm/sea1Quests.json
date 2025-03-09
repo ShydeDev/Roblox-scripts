@@ -207,7 +207,7 @@
         "questLevel": 1,
         "questName": "SkyExp1Quest",
         "questCFrame": [-4721, 843, -1949],
-        "tweenLocation": [-4720, 8745, -1941]
+        "tweenLocation": [-4720, 875, -1941]
     },
     {
         "minLevel": 475,
