@@ -26,7 +26,7 @@
         "monsterName": "Dragon Crew Warrior",
         "monsterSpawnName": "Dragon Crew Warrior [Lv. 1575]",
         "questLevel": 1,
-        "questName": "AmazonQuest",
+        "questName": "DragonCrewQuest",
         "questCFrame": [6740, 127, -715],
         "tweenLocation": [6508, 100, -940], 
         "tweenLocation2": [6139, 100, -1496]
@@ -37,7 +37,7 @@
         "monsterName": "Dragon Crew Archer",
         "monsterSpawnName": "Dragon Crew Archer [Lv. 1600]",
         "questLevel": 2,
-        "questName": "AmazonQuest",
+        "questName": "DragonCrewQuest",
         "questCFrame": [6740, 127, -715],
         "tweenLocation": [6513, 400, -112],
         "tweenLocation2": [6663, 430, 325]
