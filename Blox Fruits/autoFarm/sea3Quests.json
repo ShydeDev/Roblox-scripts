@@ -362,7 +362,7 @@
     },
     {
         "minLevel": 2575,
-        "maxLevel": 2600,
+        "maxLevel": 2599,
         "monsterName": "Skull Slayer",
         "monsterSpawnName": "Skull Slayer [Lv. 2575]",
         "questLevel": 2,
@@ -370,5 +370,14 @@
         "questCFrame": [-16665, 104, 1579],
         "tweenLocation": [-16654, 105, 1579]
     },
-    
+        {
+        "minLevel": 2600,
+        "maxLevel": 2624,
+        "monsterName": "Skull Slayer",
+        "monsterSpawnName": "Skull Slayer [Lv. 2575]",
+        "questLevel": 2,
+        "questName": "TikiQuest3",
+        "questCFrame": [-16665, 104, 1579],
+        "tweenLocation": [-16654, 105, 1579]
+    },
 ]
