@@ -45,22 +45,22 @@
     {
         "minLevel": 1625,
         "maxLevel": 1649,
-        "monsterName": "Female Islander",
-        "monsterSpawnName": "Female Islander [Lv. 1625]",
+        "monsterName": "Hydra Enforcer",
+        "monsterSpawnName": "Hydra Enforcer [Lv. 1625]",
         "questLevel": 1,
-        "questName": "AmazonQuest2",
-        "questCFrame": [5446, 601, 749],
+        "questName": "VenomCrewQuest",
+        "questCFrame": [5212, 1004, 756],
         "tweenLocation": [5675, 830, 866],
         "tweenLocation2": [4740, 800, 649]
     },
     {
         "minLevel": 1650,
         "maxLevel": 1699,
-        "monsterName": "Giant Islander",
-        "monsterSpawnName": "Giant Islander [Lv. 1650]",
+        "monsterName": "Venomous Assailant",
+        "monsterSpawnName": "Venomous Assailant [Lv. 1650]",
         "questLevel": 2,
-        "questName": "AmazonQuest2",
-        "questCFrame": [5446, 601, 749],
+        "questName": "VenomCrewQuest",
+        "questCFrame": [5212, 1004, 756],
         "tweenLocation": [4956, 700, -43]
     },
     {
@@ -262,13 +262,53 @@
     },
     {
         "minLevel": 2275,
-        "maxLevel": 2449,
+        "maxLevel": 2299,
         "monsterName": "Head Baker",
         "monsterSpawnName": "Head Baker [Lv. 2275]",
         "questLevel": 2,
         "questName": "CakeQuest2",
         "questCFrame": [-1927, 37, -12842],
         "tweenLocation": [-2206, 120, -12924]
+    },
+    {
+        "minLevel": 2300,
+        "maxLevel": 2324,
+        "monsterName": "Cocoa Warrior",
+        "monsterSpawnName": "Cocoa Warrior [Lv. 2300]",
+        "questLevel": 1,
+        "questName": "ChocQuest1",
+        "questCFrame": [235, 24, -12202],
+        "tweenLocation": [507, 85, -12422]
+    },
+    {
+        "minLevel": 2325,
+        "maxLevel": 2349,
+        "monsterName": "Chocolate Bar Battler",
+        "monsterSpawnName": "Chocolate Bar Battler [Lv. 2300]",
+        "questLevel": 2,
+        "questName": "ChocQuest1",
+        "questCFrame": [235, 24, -12202],
+        "tweenLocation": [507, 85, -12422]
+    },
+    {
+        "minLevel": 2350,
+        "maxLevel": 2374,
+        "monsterName": "Sweet Thief",
+        "monsterSpawnName": "Sweet Thief [Lv. 2300]",
+        "questLevel": 1,
+        "questName": "ChocQuest2",
+        "questCFrame": [150, 25, -12772],
+        "tweenLocation": [31, 65, -12614]
+    },
+        {
+        "minLevel": 2375,
+        "maxLevel": 2449,
+        "monsterName": "Candy Rebel",
+        "monsterSpawnName": "Candy Rebel [Lv. 2300]",
+        "questLevel": 2,
+        "questName": "ChocQuest2",
+        "questCFrame": [150, 25, -12772],
+        "tweenLocation": [88, 65, -12968]
     },
     {
         "minLevel": 2450,
@@ -329,5 +369,6 @@
         "questName": "TikiQuest3",
         "questCFrame": [-16665, 104, 1579],
         "tweenLocation": [-16654, 105, 1579]
-    }
+    },
+    
 ]
