@@ -300,7 +300,7 @@
         "questCFrame": [150, 25, -12772],
         "tweenLocation": [31, 65, -12614]
     },
-        {
+    {
         "minLevel": 2375,
         "maxLevel": 2449,
         "monsterName": "Candy Rebel",
@@ -370,9 +370,9 @@
         "questCFrame": [-16665, 104, 1579],
         "tweenLocation": [-16654, 105, 1579]
     },
-        {
+    {
         "minLevel": 2600,
-        "maxLevel": 2624,
+        "maxLevel": 2650,
         "monsterName": "Skull Slayer",
         "monsterSpawnName": "Skull Slayer [Lv. 2575]",
         "questLevel": 2,
